@@ -13,7 +13,7 @@ import { NavigationExtras, Router } from '@angular/router';
   providers: [ApiService],
 })
 export class PersonListComponent implements OnInit {
-  personList: import("d:/Angular demo project/New folder/New folder/src/app/page/product/product").person[];
+  personList:any
   products: any;
 
   constructor( private apiService: ApiService,private router: Router) { }
