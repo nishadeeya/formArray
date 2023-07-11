@@ -1,0 +1,36 @@
+{
+  "user": [
+    {
+      "person": "Nisha",
+      "items": [
+        {
+          "item": "Book",
+          "price": "150",
+          "quantity": "2"
+        },
+        {
+          "item": "coffee",
+          "price": "60",
+          "quantity": "2"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "person": "Deeya",
+      "items": [
+        {
+          "item": "coffee",
+          "price": "120",
+          "quantity": "2"
+        },
+        {
+          "item": "book",
+          "price": "200",
+          "quantity": "6"
+        }
+      ],
+      "id": 3
+    }
+  ]
+}

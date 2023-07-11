@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="row mt-2" >
+    <div class="col-md-6 col-lg-12">
+      <button class="btn" (click)="createPerson()">Create Person</button>
+
+    </div>
+  </div>
+  <div class="row ">
+    <div class="col-md-6 col-lg-12 mt-5">
+      <div class="">
+        <div class="table-responsive">
+          <table class="table" id="customers">
+            <thead>
+              <tr>
+                <th scope="col" style="text-align: center;">S.No</th>
+                <th scope="col"style="text-align: center;">Person Name</th>
+                <th scope="col" style="text-align: center;">Products</th>
+                <th scope="col" style="text-align: center;">Action </th>
+              </tr>
+            </thead>
+            <tbody >
+              <tr *ngFor="let data of personList; let i=index">
+                <td style="text-align: center;">{{i+1}} </td>
+                <td style="text-align: center;">{{ data.person}} </td>
+                <td>
+                <ul>
+                  <li *ngFor="let data of data.items;let j = index">
+                    item{{j + 1}} - Name : {{data.item}}, Price : {{data.price}}, quantity : {{data.quantity}}
+                  </li>
+                </ul></td>
+                <td  style="cursor: pointer;text-align: center;">
+                  <mat-icon class="cursor" (click)="updatePerson(data)">edit</mat-icon>
+                  <mat-icon class="cursor" (click)="deletePerson(data)">delete</mat-icon>
+
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
